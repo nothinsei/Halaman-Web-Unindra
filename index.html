@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Universitas Indraprasta PGRI (UNINDRA)</title>
+  <style>
+    body {
+      background: #ffff41;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .header img {
+      width: 80px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .header h1 {
+      display: inline-block;
+      color: blue;
+      font-family: 'Times New Roman', serif;
+      font-size: 24px;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    h2 {
+      color: red;
+      font-family: 'Times New Roman', serif;
+      font-style: italic;
+      animation: berjalan 6s linear infinite alternate;
+      margin: 5px 0;
+    }
+
+    @keyframes berjalan {
+      from { transform: translateX(0); }
+      to { transform: translateX(100px); }
+    }
+
+    hr {
+      height: 5px;
+      background: blue;
+      border: none;
+      width: 80%;
+    }
+
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 40%;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align: left;
+    }
+
+    input[type="text"] {
+      width: 95%;
+      padding: 5px;
+    }
+
+    .jurusan {
+      width: 50%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    button {
+      padding: 8px 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo.png" alt="Logo UNINDRA">
+    <h1>UNIVERSITAS INDRAPRASTA PGRI (UNINDRA)</h1>
+  </div>
+
+  <h2>Jl. Nangka No.58 Tanjung Barat - JakSel</h2>
+  <hr>
+
+  <form>
+    <table>
+      <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td><input type="text" name="nama" placeholder="Masukkan Nama Anda"></td>
+      </tr>
+      <tr>
+        <td>NPM</td>
+        <td>:</td>
+        <td><input type="text" name="npm" placeholder="Masukkan NPM Anda"></td>
+      </tr>
+    </table>
+  </form>
+
+  <div class="jurusan">
+    <b>FTIK :</b>
+    <ol type="A">
+      <li>Informatika</li>
+      <li>Teknik Arsitektur</li>
+      <li>Teknik Industri</li>
+    </ol>
+  </div>
+
+  <button type="submit">SIMPAN</button>
+
+  <div class="jurusan">
+    <b>MIPA :</b>
+    <ol type="I">
+      <li>Matematika</li>
+      <li>Fisika</li>
+      <li>Biologi</li>
+    </ol>
+  </div>
+
+</body>
+</html>
